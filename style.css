@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+:root{
+    --rock:#F083A2;
+    --paper:#C38EDC;
+    --scissor:#7FACFF;
+}
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 3rem;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+
+}
+
+.choice {
+    width: 200px;
+    /* height: 165px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice i{
+    font-size: 4.5rem;
+    padding: 3.5rem;
+    /* color: #fff; */
+}
+.rock{
+    background-color: var(--rock);
+    box-shadow: 1px 0px 6px 15px #f1658d;
+    color: #c00036fd;
+
+}
+.rock:hover{
+    background-color:#b80034 ;
+    box-shadow: 1px 0px 6px 15px #d43663;
+    color: var(--rock);
+
+}
+.paper{
+    background-color: var(--paper);
+    box-shadow: 1px 0px 6px 15px #cd64fd;
+    color: #7301a8;
+}
+.paper:hover{
+    background-color: #7301a8;;
+    box-shadow: 1px 0px 6px 15px #a30be9;
+    color:var(--paper); 
+}
+.scirror{
+    background-color: var(--scissor);
+    box-shadow: 1px 0px 6px 15px #4987fa;
+    color: #003eb1;
+}
+.scirror:hover{
+    background-color: #003eb1;
+    box-shadow: 1px 0px 6px 15px #0059ff;
+    color: var(--scissor);
+}
+
+
+.choice:hover {
+    cursor: pointer;
+    /* background-color: #081b31; */
+}
+
+/* img {
+    width: 95%;
+    height: 95%;
+    border-radius: 50%;
+    object-fit: cover;
+} */
+
+
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 3rem;
+    gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+.msg-container{
+    margin-top: 5rem;
+}
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: inline;
+}
+
+
+
+
+
+@media screen and (max-width: 578px) {
+h1{
+    font-size: 2rem;
+ }
+ #msg{
+    font-size: 1.2rem;
+}
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+
+}
+
+.choice {
+    width: 130px;
+    /* height: 165px; */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choice i{
+    font-size: 2.8rem;
+    padding: 2.5rem;
+    /* color: #fff; */
+}
+
+#user-score,
+#comp-score {
+    font-size: 2.9rem;
+}
+.score-board {
+    font-size: 1.6rem;
+}
+  }
+  
